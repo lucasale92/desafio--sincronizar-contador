@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  color: black;
+  background-color: #fff;
+}
+.App-nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.App-nav ul li a {
+  text-decoration: none;
+  color: #6e00653d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+}
+.App-nav ul li::before {
+  content: "";
+  height: 4px;
+  width: 0%;
+  background: rgb(248, 244, 244);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+.App-nav ul li:hover::before {
+  width: 100%;
+}
+.App-logo {
+  width: 150px;
+  height: 150px;
+}
+.App-cart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.App-cart:hover {
+  background-color: #fff;
+  color: black;
+}
+.btn-cart {
+  color: #fff;
+  background-color: #015a08;
+}
+.bi facebook:hover {
+  background-color: #020100;
+  color: #fff;
+  
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h2 {
+  background-color: #ffedcc;
+  border: solid 5px #d70101;
+}
+.bg-nav {
+  background-color: #d70101;  
+}
+.bg-nav:hover {
+  color: #fff;
+}
+.botonUno {
+  font-size: 30px;
+  background-color: #015a08;
+  width: 30px;
+}
+.botonDos {
+  font-size: 30px;
+  background-color: #015a08;
+  margin: 5px;
+  width: 30px;
+}
+.botonTres {
+  font-size: 25px;
+  background-color: #fff;
+  margin: 5px;
+}
+.botonCuatro {
+  font-size: 25px;
+  background-color: #d70101;
+}
+.itemLista{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.detail-nombre{
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.detail-precio{
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.shop-img {
+  padding: .5rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+.shop-img:hover {
+  opacity: .5;
+}
+.shop-img:focus {
+  outline: none;
+}
